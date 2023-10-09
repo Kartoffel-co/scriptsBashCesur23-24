@@ -6,7 +6,7 @@ function random(){
 }
 case $1 in
   bajo)
-    echo "bajo"
+    echo "nivel bajo"
     digitos=10
         for i in {0..9}
     do
@@ -21,7 +21,7 @@ case $1 in
       do
         rand2=$(random $digitos 1)
       done
-      while [[ $simb = "/" && $rand1 -gt $rand2 ]]
+      while [[ $simb = "/" && $rand1 -lt $rand2 ]]
       do
         rand1=$(random $digitos 1)
       done
@@ -48,7 +48,7 @@ case $1 in
     echo "tu media ha sido de $media"
   ;;
   medio)
-    echo "medio"
+    echo "nivel medio"
     digitos=100
         for i in {0..9}
     do
@@ -63,7 +63,7 @@ case $1 in
       do
         rand2=$(random $digitos 1)
       done
-      while [[ $simb = "/" && $rand1 -gt $rand2 ]]
+      while [[ $simb = "/" && $rand1 -lt $rand2 ]]
       do
         rand1=$(random $digitos 1)
       done
@@ -90,7 +90,7 @@ case $1 in
     echo "tu media ha sido de $media"
   ;;
   alto)
-    echo "alto"
+    echo "nivel alto"
     digitos=1000
         for i in {0..9}
     do
@@ -105,7 +105,7 @@ case $1 in
       do
         rand2=$(random $digitos 1)
       done
-      while [[ $simb = "/" && $rand1 -gt $rand2 ]]
+      while [[ $simb = "/" && $rand1 -lt $rand2 ]]
       do
         rand1=$(random $digitos 1)
       done
