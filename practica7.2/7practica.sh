@@ -4,7 +4,7 @@ for i in {1..2000}
     numerosEnteris[$i]=$i
 done
 
-for i in {1..2000}
+for i in {2000..1}
     do
         resto=$((${numerosEnteris[$i]}%2))
     if [[ $resto -ne 0 ]]
