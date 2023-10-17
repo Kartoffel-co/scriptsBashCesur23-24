@@ -4,6 +4,6 @@ limit=$#
 while [[ $cont -ne $limit ]]
     do
         cat $1
-        shift $1
+        shift
     cont=$(($cont+1))
 done
