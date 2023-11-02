@@ -11,7 +11,7 @@ case $3 in
         echo el resultado es $(operacion $1 $2 -)
     ;;
     multiplicacion)
-        echo el resultado es $(operacion $1 $2 *)
+        echo el resultado es $(operacion $1 $2 "*")
     ;;
     resto)
         echo el resultado es $(operacion $1 $2 %)

@@ -2,7 +2,7 @@
 read -p "nombre de usuario: " nombre
 
 nombreLenght=${#nombre}
-usuario=$( users | grep $nombre | cut -c 1-$nombreLenght usuario)
+usuario=$( users | grep $nombre | cut -c 1-$nombreLenght)
 
 if [[ $usuario = $nombre ]]
     then

@@ -5,7 +5,7 @@ nParametros=$#
 
 if [ $nParametros -ne 3 ]
     then
-        echo -e "${RED}ERROR\n${CYAN}No se han introducido parametros"
+        echo -e "${RED}ERROR\n${CYAN}No se han introducido suficientes parametros"
         exit
 fi
 

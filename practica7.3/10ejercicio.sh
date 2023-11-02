@@ -3,7 +3,7 @@ source colors
 
 if [[ $1 =~ ^[0-9]+$ ]]
     then
-        echo "quit" | bc
+        echo "quit" | bc #esto lo uso para que no aparezca ninguna linea en blanco
     else
         echo -e "${RED}ERROR: solo se puede poner numero enteros positivos"
 fi

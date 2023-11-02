@@ -10,4 +10,5 @@ for i in {0..19}
         echo $n3
         n2=$n1
         n1=$n3
+        echo --------
 done

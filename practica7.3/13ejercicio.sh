@@ -26,12 +26,12 @@ convertidorSegundos() {
 }
 
 calcularBisiesto() {
-    if (( ($1 % 4 == 0 && $1 % 100 != 0) || $1 % 400 == 0 ));
-        then
-            echo "$1 es un año bisiesto."
-        else
-            echo "$1 no es un año bisiesto."
-fi
+    if [[ $(($1%4)) -eq 0 ]]
+            then
+                echo "$1 es un año bisiesto."
+            else
+                echo "$1 no es un año bisiesto."
+    fi
 }
 
 echo -e "${YELLOW}████████████████████████████████████████████████████████████████████████████████████████"

@@ -12,7 +12,7 @@ done
 exec 4<frutas
 
 cont=0
-while [ $cont -ne $(echo $(wc -l frutas | cut -b 1)-1 | bc) ]
+while [ $cont -le $(echo $(wc -l frutas | cut -b 1)-1 | bc) ]
     do
         read -u4 fruta
         frutas[$cont]=$fruta
@@ -28,7 +28,7 @@ if [ -f ./frutas ]
 fi
 
 cont=0
-while [ $cont -ne ${#frutas[@]} ]
+while [ $cont -le ${#frutas[@]} ]
     do
         echo ${frutas[$cont]} >> frutas
         cont=$(($cont+1))

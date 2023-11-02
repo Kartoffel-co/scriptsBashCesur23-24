@@ -8,3 +8,4 @@ while [[ $cont -ne $limit ]]
         shift $1
     cont=$(($cont+1))
 done
+cat compiladoFicheros.txt
